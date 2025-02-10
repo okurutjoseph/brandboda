@@ -6,6 +6,7 @@ import { Testimonials } from "@/components/sections/testimonials"
 import { HireMe } from "@/components/sections/hire-me"
 import { Footer } from "@/components/sections/footer"
 import { Header } from "@/components/header"
+import { AboutMe } from "@/components/sections/about-me"
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Capabilities />
       <Process />
       <Testimonials />
+      <AboutMe />
       <HireMe />
       <Footer />
     </main>
