@@ -1,7 +1,23 @@
-import { FC } from 'react';
+'use client';
+import { FC, useEffect } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 const AdminDashboard: FC = () => {
+  const router = useRouter();
+
+  useEffect(() => {
+    const isAuthenticated = localStorage.getItem('adminAuthenticated');
+    if (!isAuthenticated) {
+      router.push('/admin/login');
+    }
+  }, [router]);
+
+  const handleLogout = () => {
+    localStorage.removeItem('adminAuthenticated');
+    router.push('/admin/login');
+  };
+
   return (
     <div className="flex h-screen">
       {/* Sidebar */}
@@ -26,6 +42,13 @@ const AdminDashboard: FC = () => {
           >
             Certificates
           </Link>
+          
+          <button 
+            onClick={handleLogout}
+            className="w-full text-left py-2 px-4 hover:bg-gray-700 rounded-lg transition-colors text-red-400"
+          >
+            Logout
+          </button>
         </nav>
       </div>
 
