@@ -38,8 +38,8 @@ export function Footer() {
               <div className="space-y-2">
                 <div>
                   Email to{" "}
-                  <a href="mailto:hello@josephokurut.com" className="text-white font-bold hover:underline">
-                    hello@josephokurut.com
+                  <a href="mailto:josephokurut97@gmail.com" className="text-white font-bold hover:underline">
+                    josephokurut97@gmail.com
                   </a>
                 </div>
                 <div>
