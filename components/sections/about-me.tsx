@@ -2,80 +2,54 @@ import Image from "next/image"
 
 export function AboutMe() {
   return (
-    <section className="border-t border-neutral-800 py-20">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-[300px,1fr] gap-12">
-          {/* Profile column */}
-          <div className="space-y-4">
-            <div className="relative aspect-square overflow-hidden rounded-lg">
-              <div className="absolute top-0 left-0 p-4">
-                <h1 className="text-2xl font-bold text-white">Your friendly<br />neighborhood Webflow<br />expert</h1>
-              </div>
-              <Image
-                src="images/me.webp"
-                alt="Joseph Okurut"
-                fill
-                className="object-cover"
-                priority
-              />
-              <div className="absolute bottom-0 left-0 right-0 p-4">
-              </div>
+    <section className="py-20 relative">
+      <Image 
+        src="./images/643191e711af0d5ee2944774_background.svg"
+        alt="Background"
+        fill
+        className="object-cover opacity-10"
+        priority
+      />
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold">My Journey</h2>
+          <p className="text-neutral-400">Key milestones</p>
+        </div>
+
+        <div className="space-y-16">
+          {/* Platform Launch */}
+          <div className="relative flex items-center">
+            <div className="w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center z-10">
+              <span className="text-white">1</span>
             </div>
-            <div className="space-y-3">
-              <h2 className="text-2xl font-bold">Joseph Okurut</h2>
-              <div className="flex items-center gap-2">
-                <div className="w-2 h-2 rounded-full bg-green-500"></div>
-                <p className="text-neutral-400">Available for Hire</p>
-              </div>
-              <button className="bg-neutral-800 hover:bg-neutral-700 text-white px-4 py-2 rounded-lg flex items-center gap-2">
-                Free estimate
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <line x1="5" y1="12" x2="19" y2="12"></line>
-                  <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
-              </button>
+            <div className="ml-8 bg-neutral-900 p-6 rounded-lg max-w-lg">
+              <div className="text-sm text-neutral-400 mb-2">2023</div>
+              <h3 className="text-xl font-semibold mb-2">Platform Launch</h3>
+              <p className="text-neutral-400">LearnOnchain begins its journey to revolutionize blockchain education.</p>
             </div>
           </div>
 
-          {/* Certifications column */}
-          <div className="space-y-12">
-            {/* Finsweet Section */}
-            <div className="space-y-4">
-              <div className="flex items-center gap-4">
-                <div className="h-8 w-8 rounded-full bg-neutral-800 flex items-center justify-center">
-                  F
-                </div>
-                <h3 className="text-xl font-semibold">Finsweet+ Member</h3>
-              </div>
-              <p className="text-neutral-400 pl-12">
-                Finsweet Client-first learning convention certified developer with expertise in implementing best practices.
-              </p>
+          {/* Community Growth */}
+          <div className="relative flex items-center justify-end">
+            <div className="w-8 h-8 rounded-full bg-purple-500 flex items-center justify-center z-10">
+              <span className="text-white">2</span>
             </div>
-
-            {/* TRICKS Section */}
-            <div className="space-y-4">
-              <div className="flex items-center gap-4">
-                <div className="h-8 w-8 rounded-full bg-neutral-800 flex items-center justify-center">
-                  T
-                </div>
-                <h3 className="text-xl font-semibold">TRICKS Wizardry</h3>
-              </div>
-              <p className="text-neutral-400 pl-12">
-                Master of TRICKS framework library. Creating dynamic interactions and complex functionalities with ease.
-              </p>
+            <div className="ml-8 bg-neutral-900 p-6 rounded-lg max-w-lg">
+              <div className="text-sm text-neutral-400 mb-2">2024</div>
+              <h3 className="text-xl font-semibold mb-2">Community Growth</h3>
+              <p className="text-neutral-400">Reached 50,000+ active learners and launched advanced courses.</p>
             </div>
+          </div>
 
-            {/* Webflow Section */}
-            <div className="space-y-4">
-              <div className="flex items-center gap-4">
-                <div className="h-8 w-8 rounded-full bg-neutral-800 flex items-center justify-center">
-                  W
-                </div>
-                <h3 className="text-xl font-semibold">Webflow Pro</h3>
-              </div>
-              <p className="text-neutral-400 pl-12">
-                Certified Webflow Professional with extensive experience in creating responsive, dynamic websites.
-              </p>
+          {/* Global Recognition */}
+          <div className="relative flex items-center">
+            <div className="w-8 h-8 rounded-full bg-green-500 flex items-center justify-center z-10">
+              <span className="text-white">3</span>
+            </div>
+            <div className="ml-8 bg-neutral-900 p-6 rounded-lg max-w-lg">
+              <div className="text-sm text-neutral-400 mb-2">2025</div>
+              <h3 className="text-xl font-semibold mb-2">Global Recognition</h3>
+              <p className="text-neutral-400">Accredited as the leading blockchain education platform.</p>
             </div>
           </div>
         </div>
