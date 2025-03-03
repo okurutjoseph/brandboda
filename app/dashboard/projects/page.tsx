@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 
-const ProjectsAdmin = () => {
+const ProjectsPage = () => {
   const [imageFile, setImageFile] = useState<File | null>(null);
   const [projectUrl, setProjectUrl] = useState('');
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
@@ -109,4 +109,4 @@ const ProjectsAdmin = () => {
   );
 };
 
-export default ProjectsAdmin; 
+export default ProjectsPage; 

@@ -8,7 +8,7 @@ interface TestimonialForm {
   testimonial: string;
 }
 
-const TestimonialsAdmin = () => {
+const TestimonialsPage = () => {
   const [formData, setFormData] = useState<TestimonialForm>({
     clientName: '',
     company: '',
@@ -200,4 +200,4 @@ const TestimonialsAdmin = () => {
   );
 };
 
-export default TestimonialsAdmin; 
+export default TestimonialsPage; 

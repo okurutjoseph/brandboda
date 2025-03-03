@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 
-const CertificatesAdmin = () => {
+const CertificatesPage = () => {
   const [imageFile, setImageFile] = useState<File | null>(null);
   const [certificateName, setCertificateName] = useState('');
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
@@ -108,4 +108,4 @@ const CertificatesAdmin = () => {
   );
 };
 
-export default CertificatesAdmin; 
+export default CertificatesPage; 
