@@ -8,8 +8,8 @@ import { cn } from "@/lib/utils";
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Joseph Okurut - Web Developer',
-  description: 'Web Developer specializing in modern web applications',
+  title: 'Brand Boda',
+  description: 'Brand Boda Portfolio',
   icons: {
     icon: '/images/joseph.jpg',
     // You might also want to add these for complete favicon support
